@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChatHistory">
+    <accountData>
+      <list>
+        <AccountData>
+          <accountId value="VXNlcjo0MTY4MTE=" />
+          <chats>
+            <list>
+              <chat>
+                <internalId value="c04e9e17-1661-48de-b87d-de5a16236918" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+                <messages>
+                  <list>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="connect mysql to python" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="To connect MySQL to Python, you can use the `mysql-connector-python` library. Here's an example of how to establish a connection to a MySQL database using Python:&#10;&#10;1. Install the `mysql-connector-python` library:&#10;&#10;```&#10;pip install mysql-connector-python&#10;```&#10;&#10;2. Import the necessary modules:&#10;&#10;```python&#10;import mysql.connector&#10;```&#10;&#10;3. Create a connection to the MySQL database:&#10;&#10;```python&#10;mydb = mysql.connector.connect(&#10;  host=&quot;localhost&quot;,&#10;  user=&quot;yourusername&quot;,&#10;  password=&quot;yourpassword&quot;,&#10;  database=&quot;mydatabase&quot;&#10;)&#10;```&#10;&#10;Replace `&quot;localhost&quot;` with the hostname or IP address of your MySQL server, `&quot;yourusername&quot;` with your MySQL username, `&quot;yourpassword&quot;` with your MySQL password, and `&quot;mydatabase&quot;` with the name of the database you want to connect to.&#10;&#10;4. Create a cursor object to execute SQL queries:&#10;&#10;```python&#10;mycursor = mydb.cursor()&#10;```&#10;&#10;5. Execute SQL queries using the `execute()` method of the cursor object:&#10;&#10;```python&#10;# Execute a SELECT query&#10;mycursor.execute(&quot;SELECT * FROM mytable&quot;)&#10;&#10;# Fetch the results&#10;results = mycursor.fetchall()&#10;&#10;# Print the results&#10;for row in results:&#10;    print(row)&#10;```&#10;&#10;6. When you're done, close the cursor and the database connection:&#10;&#10;```python&#10;mycursor.close()&#10;mydb.close()&#10;```&#10;&#10;Here's a complete example that connects to a MySQL database, creates a table, inserts data, and selects data:&#10;&#10;```python&#10;import mysql.connector&#10;&#10;# Connect to the database&#10;mydb = mysql.connector.connect(&#10;  host=&quot;localhost&quot;,&#10;  user=&quot;yourusername&quot;,&#10;  password=&quot;yourpassword&quot;,&#10;  database=&quot;mydatabase&quot;&#10;)&#10;&#10;# Create a cursor object&#10;mycursor = mydb.cursor()&#10;&#10;# Create a table&#10;mycursor.execute(&quot;CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))&quot;)&#10;&#10;# Insert data into the table&#10;sql = &quot;INSERT INTO customers (name, address) VALUES (%s, %s)&quot;&#10;val = (&quot;John Doe&quot;, &quot;123 Main St&quot;)&#10;mycursor.execute(sql, val)&#10;mydb.commit()  # Commit the transaction&#10;&#10;# Select data from the table&#10;mycursor.execute(&quot;SELECT * FROM customers&quot;)&#10;result = mycursor.fetchall()&#10;&#10;# Print the results&#10;for row in result:&#10;    print(row)&#10;&#10;# Close the cursor and connection&#10;mycursor.close()&#10;mydb.close()&#10;```&#10;&#10;Make sure to replace `&quot;yourusername&quot;`, `&quot;yourpassword&quot;`, and `&quot;mydatabase&quot;` with your actual MySQL credentials and database name." />
+                    </message>
+                  </list>
+                </messages>
+                <updatedAt value="2024-05-06T18:38:59.3747109" />
+              </chat>
+              <chat>
+                <internalId value="ab52a36b-7100-4eed-8273-050805e253ed" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="6c481977-00a6-476e-9d40-fed30d84e82f" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="afdb74da-cfc4-4a83-ba78-524bd465b67c" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="8135b4de-38b1-458a-9097-ac0f9385c940" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="ed5b4b53-27fc-469e-b65f-f2bf47f44419" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="73bcb8eb-8834-468a-a9bc-421a2916e160" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="f7a8d56a-851d-42d6-8f3c-1fcd15d82c51" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-sonnet-20240229" />
+                    <provider value="Anthropic" />
+                    <title value="Claude 3 Sonnet" />
+                  </llm>
+                </llm>
+              </chat>
+            </list>
+          </chats>
+          <defaultLlm>
+            <llm>
+              <model value="anthropic/claude-3-sonnet-20240229" />
+              <provider value="Anthropic" />
+              <title value="Claude 3 Sonnet" />
+            </llm>
+          </defaultLlm>
+        </AccountData>
+      </list>
+    </accountData>
+  </component>
+</project>
