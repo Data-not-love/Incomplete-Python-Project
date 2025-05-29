@@ -57,9 +57,7 @@ git clone <repo-url>
 cd <tên-thư-mục>
 Cài đặt môi trường ảo và package cần thiết (nếu có)
 
-bash
-Copy
-Edit
+
 python -m venv .venv
 source .venv/bin/activate     # Trên Linux/macOS
 .venv\Scripts\activate        # Trên Windows
