@@ -44,8 +44,7 @@ Dự án phần mềm bán đồ ăn nhanh (Fast Food Delivery) được xây d�
 └── KHMT_De_Cuong_Do_An_Template_update_2024.docx
 
 yaml
-Copy
-Edit
+
 
 ---
 
@@ -73,8 +72,7 @@ Cấu hình .env
 Tạo file .env (nếu chưa có) với nội dung như sau:
 
 ini
-Copy
-Edit
+
 DB_HOST=localhost
 DB_PORT=3306
 DB_NAME=fastfood_db
@@ -83,8 +81,6 @@ DB_PASSWORD=your_password
 Chạy ứng dụng
 
 bash
-Copy
-Edit
 python View/main.py
 💡 Chức năng chính
 👤 Đăng nhập / Đăng ký / Quên mật khẩu
