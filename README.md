@@ -14,7 +14,7 @@ Dự án phần mềm bán đồ ăn nhanh (Fast Food Delivery) được xây d�
 ---
 
 ## 📁 Cấu trúc thư mục
-
+```
 ├── Assets/ # Tài nguyên tĩnh (ảnh, icon...)
 ├── Controller/ # Logic xử lý chính
 │ ├── Full_Order.py
@@ -43,7 +43,7 @@ Dự án phần mềm bán đồ ăn nhanh (Fast Food Delivery) được xây d�
 ├── De_Cuong_Do_An_CS1_2024.docx
 └── KHMT_De_Cuong_Do_An_Template_update_2024.docx
 
-yaml
+```
 
 
 ---
